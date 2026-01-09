@@ -1,0 +1,76 @@
+<section class="faq-section">
+  <div class="faq-wrapper">
+    <h2 class="faq-heading">Frequently Asked Questions</h2>
+
+    <!-- FAQ 1 -->
+    <div class="faq-item" [class.active]="isOpen(1)">
+      <button class="faq-question" (click)="toggle(1)">
+        How long does implementation take?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Our full system setup, configuration, and hands-on training are completed
+          within <strong>just 7 days</strong>, ensuring minimal disruption to your business.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="faq-item" [class.active]="isOpen(2)">
+      <button class="faq-question" (click)="toggle(2)">
+        Can I try the software before committing?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes. We offer a <strong>1-month risk-free trial</strong> so you can experience
+          all features before making a long-term commitment.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="faq-item" [class.active]="isOpen(3)">
+      <button class="faq-question" (click)="toggle(3)">
+        Is your system compliant with tax reforms and accounting standards?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Absolutely. Our accounting and payroll solutions are fully aligned with
+          current tax regulations and international accounting standards.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 4 -->
+    <div class="faq-item" [class.active]="isOpen(4)">
+      <button class="faq-question" (click)="toggle(4)">
+        Do you provide corporate training?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes. We provide <strong> hands-on implementation and training program</strong>
+          to ensure your team can confidently use the system.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 5 -->
+    <div class="faq-item" [class.active]="isOpen(5)">
+      <button class="faq-question" (click)="toggle(5)">
+        Are your ERP and SaaS solutions scalable?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Our ERP and SaaS platforms are fully scalable and designed to grow with
+          your business without performance or security issues.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>

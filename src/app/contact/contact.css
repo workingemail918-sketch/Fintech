@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ===== Contact Section ===== */
+
+.contact-section {
+  padding: 80px 0px;
+  padding-bottom: 0;
+  background: #f8f9fa;
+  font-family: 'Montserrat';
+}
+
+.contact-section .container {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+
+/* ===== Left Side ===== */
+
+.contact-section .contact-left {
+  width: 50%;
+  max-width: 1000px;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.contact-section .contact-left h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-section .contact-left h2 span {
+  color: #1d3bbf;
+}
+
+.contact-section .contact-left p {
+  font-size: 19px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ===== Form ===== */
+
+.contact-section .contact-left form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+
+.contact-section .contact-left form .row {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.contact-section .contact-left form input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #dcdcdc;
+  font-size: 14px;
+}
+
+.contact-section .contact-left form select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #dcdcdc;
+  font-size: 14px;
+}
+
+.contact-section .contact-left form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #dcdcdc;
+  font-size: 14px;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-section .contact-left form button {
+  width: 180px;
+  padding: 12px;
+  background: #1d3bbf;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.contact-section .contact-left form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===== Right Side ===== */
+
+.contact-section .contact-right {
+  padding: 80px;
+  background-color: #030d38;
+  width: 50%;
+}
+
+.contact-section .contact-right .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-section .contact-right .info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.icon{
+  width: 40px;
+  background-color: rgb(54, 130, 243);
+  height: 40px;
+  padding: 20px;
+}
+.contact-section .contact-right .info-item .icon {
+  font-size: 28px;
+}
+
+.contact-section .contact-right .info-item h4 {
+  color: white;
+  margin: 0 0 5px;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.726);
+  width: fit-content;
+  padding-bottom: 15px;
+}
+
+.contact-section .contact-right .info-item p {
+  margin: 0;
+  font-size: 18px;
+  color: #ffffffc0;
+  margin-top: 10px;
+}
+
+.contact-section .contact-right .map iframe {
+  border-radius: 12px;
+}
+
+/* ===== Hero Image ===== */
+
+.ovelay {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.contactimg {
+  height: 650px;
+  position: relative;
+  font-family: 'Montserrat';
+  color: white;
+  font-size: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contactimg h1 {
+  font-weight: 900;
+  margin-top: 0;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+
+  .contact-section .container {
+    flex-direction: column;
+  }
+
+  .contactimg h1 {
+    font-size: 36px;
+  }
+
+  .contactimg {
+    height: 500px;
+  }
+
+.contact-section .contact-left {
+    padding-left: 20px;
+    width: 90%;
+  }
+.contact-section .contact-right {
+width: 90%;
+padding: 20px;
+}
+  .ovelay {
+    height: 500px;
+  }
+}

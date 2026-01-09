@@ -1,0 +1,77 @@
+<section class="demo-section">
+  <div class="content-wrapper">
+    <div class="text-content">
+      <h1>Request A Personalized <span>Demo</span></h1>
+
+      <p>
+      Optimize your enterprise with expert guidance. Connect with our team for a complimentary consultation. We’ll demonstrate how FISH integrates cutting-edge ERP technology to streamline your business processes and maximize organizational efficiency.
+      </p>
+
+      <p>
+        Share your requirements with us to find out why FISH is the right choice for your
+        business?
+      </p>
+
+      <p class="assurance">We assure you that you would always get the best service from us!</p>
+    </div>
+
+    <!-- Right Form -->
+    <div class="form-card">
+      <h2>Get Your Free Demo</h2>
+
+      <form [formGroup]="demoForm" >
+        <!-- Full Name -->
+        <div class="field">
+          <input type="text" placeholder="Full Name" formControlName="name" />
+
+          @if (demoForm.get('fullName')?.invalid && demoForm.get('fullName')?.touched) {
+          <small class="error">Full name is required</small>
+          }
+        </div>
+
+        <!-- Company Name -->
+        <div class="field">
+          <input type="text" placeholder="Company Name" formControlName="company" />
+
+          @if (demoForm.get('company')?.invalid && demoForm.get('company')?.touched) {
+          <small class="error">Company name is required</small>
+          }
+        </div>
+
+        <!-- Email -->
+        <div class="field">
+          <input type="email" placeholder="Work Email" formControlName="email" />
+
+          @if (demoForm.get('email')?.touched && demoForm.get('email')?.errors) { @if
+          (demoForm.get('email')?.errors?.['required']) {
+          <small class="error">Email is required</small>
+          } @if (demoForm.get('email')?.errors?.['email']) {
+          <small class="error">Enter a valid email address</small>
+          } }
+        </div>
+
+        <!-- Phone -->
+        <div class="field">
+          <input type="number" placeholder="Phone Number" formControlName="phone" />
+
+          @if (demoForm.get('phone')?.invalid && demoForm.get('phone')?.touched) {
+          <small class="error">Phone number is required</small>
+          }
+        </div>
+
+        <!-- Business Need -->
+        <div class="field">
+          <textarea placeholder="Business Need" formControlName="need"></textarea>
+
+          @if (demoForm.get('need')?.invalid && demoForm.get('need')?.touched) {
+          <small class="error">Please describe your business need</small>
+          }
+        </div>
+        @if (isending) {
+        <p style="text-align: center;">Loading....</p>}
+        <button type="submit" [disabled]="demoForm.invalid" (click)="submit()">SCHEDULE NOW</button>
+      </form>
+    </div>
+  </div>
+</section>
+<app-faq></app-faq>

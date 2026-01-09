@@ -1,0 +1,77 @@
+<div class="contactimg">
+     <img src="group-afro-americans-working-together (2)-overlay.jpg" alt="" class="ovelay">
+    <h1>CONTACT US </h1>
+    </div>
+<section class="contact-section">
+  <div class="container">
+
+    <!-- Left side: form -->
+    <div class="contact-left">
+      <h2>GET IN TOUCH <span>WITH US</span></h2>
+      <p>
+        Connect with <strong>Fin Integrated System Hub</strong> today! 
+        Our team helps businesses streamline operations, automate workflows, 
+        and achieve data-driven growth with cutting-edge ERP, payroll, 
+        and analytics solutions.
+      </p>
+
+      <form [formGroup]="contactForm" (ngSubmit)="submit()">
+        <div class="row">
+          <input type="text" placeholder="Your Name *" formControlName="fullName"/>
+          <input type="email" placeholder="Your Email *" formControlName="email"/>
+        </div>
+
+        <input type="text" placeholder="Company Name" formControlName="company"/>
+        <select formControlName="service">
+          <option value="" disabled selected>Choose Your service</option>
+          <option>Accounting & Payroll</option>
+          <option>ERP & SaaS Solutions</option>
+          <option>Data Analytics</option>
+          <option>System Integrations & Data Migration</option>
+
+          <option>Networking & Security</option>
+                    <option>Others</option>
+
+        </select>
+
+        <textarea placeholder="Your Need" formControlName="need"></textarea>
+        <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Right side: contact info -->
+    <div class="contact-right">
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <p>+234 9073678112, +234 7062625233</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon">✉️</div>
+          <div>
+            <h4>Support Email</h4>
+            <p>finintegratedsystemhubteam@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon">📍</div>
+          <div>
+            <h4>Office Address</h4>
+            <p>Isheri-Oshun, Lagos, Nigeria</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15856.118548408005!2d3.265714517838776!3d6.517932492654706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8faa6eaabec1%3A0xaed4f0575f9f8e87!2sIsheri%20Osun%2C%20Lagos!5e0!3m2!1sen!2sng!4v1767981119794!5m2!1sen!2sng" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>

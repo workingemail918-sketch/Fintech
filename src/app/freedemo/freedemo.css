@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.demo-section {
+    width: 100%;
+    padding: 80px 60px;
+    padding-top: 350px;
+    background-color: rgb(238, 238, 238);
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* Left Text */
+.text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-weight: 800;
+  background: linear-gradient(135deg, #2e46b3, #41adce);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-content h1 span {
+    color: #c61c8c;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #555;
+}
+
+.text-content .assurance {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Form Card */
+.form-card {
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid #a8a8a8;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.form-card h2 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.form-card input,
+.form-card textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 10px 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.form-card textarea {
+    resize: none;
+    height: 90px;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.form-card button {
+    width: 100%;
+    background-color: rgb(0, 81, 255);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.form-card button:hover {
+    background-color: #103e74;
+}
+@media (max-width:568px) {
+    .content-wrapper{
+        flex-direction: column;
+        gap: 0;
+    }
+    .text-content h1 {
+    font-size: 35px;
+    text-align: center;
+    }
+    .text-content p{
+        font-size: 16px;
+        line-height: 23px;
+            text-align: center;
+
+    }
+    .demo-section{
+        padding: 30px 30px;
+        padding-top: 200px;
+    }
+}
+.field {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border-color: #d32f2f;
+}
+
+.error {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #d32f2f;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  background: #c00000;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.2;
+  
+cursor: not-allowed;
+}

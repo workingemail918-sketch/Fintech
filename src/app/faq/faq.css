@@ -1,0 +1,77 @@
+.faq-section {
+  background: #f8fafc;
+  padding: 100px 20px;
+}
+
+.faq-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.faq-heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+/* Accordion Item */
+.faq-item {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e1e5ea;
+  margin-bottom: 22px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
+  &.active {
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+
+    .icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 400px;
+    }
+  }
+}
+
+/* Question */
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 26px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f1f4f9;
+  }
+}
+
+/* Icon */
+.icon {
+  font-size: 28px;
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+
+  p {
+    padding: 0 30px 30px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+  }
+}

@@ -1,0 +1,30 @@
+<div class="body" [class.scrolled]="scrolled">
+  <nav class="navbar" [class.scrolled]="scrolled">
+
+    <div class="logodiv">
+      <img src="fishlogo.png" alt="" class="logo">
+    </div>
+
+    <ul class="nav-links">
+      <li><a [routerLink]="['/home']" routerLinkActive="active" >Home</a></li>
+      <li><a [routerLink]="['/about']"  routerLinkActive="active">About</a></li>
+      <li><a href="#" [routerLink]="['/services']"  routerLinkActive="active">Services</a></li>
+      <li><a href="#" [routerLink]="['/contact-us']"  routerLinkActive="active">Contact</a></li>
+    </ul>
+
+    <button class="cta-btn" [routerLink]="['/freedemo']"   >Free Demo</button>
+
+    <!-- Hamburger -->
+    <div class="hamburger" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </nav>
+
+</div>
+
+@if (ismenu) {
+<app-menu></app-menu>
+}
